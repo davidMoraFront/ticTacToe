@@ -7,7 +7,6 @@ import { Component, OnInit, Input, Output } from '@angular/core';
 })
 export class SquareComponent implements OnInit {
   @Input() player: 'X' | 'O';
-  @Output() status: 'player1' | 'player2';
 
   constructor() {}
 
