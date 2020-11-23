@@ -1,0 +1,20 @@
+:host {
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+
+  button {
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+
+    &.player1 {
+      background-color: #007bff;
+    }
+
+    &.player2 {
+      background-color: #ffc107;
+    }
+  }
+}

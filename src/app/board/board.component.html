@@ -1,0 +1,9 @@
+<button class="start" (click)="newGame()">{{startText}}</button>
+<div class="player">{{turnPlayer}} {{player}}</div>
+<div class="board">
+  <app-square *ngFor="let value of squares; let i = index" [player]="value" (click)="move(i);"
+    (winner)="isWinner(winner)">
+    <!-- [ngClass]="xIsNext == true ? 'player1' : 'player2'"> -->
+  </app-square>
+</div>
+<h2 class="winner" *ngIf="winner">The winner is {{winner}}</h2>
