@@ -11,7 +11,6 @@ export class BoardComponent implements OnInit {
   xIsNext: boolean;
   winner: string;
   turnPlayer: string = 'Turn for the player:';
-  winnerText: string = 'The winner is:';
 
   constructor() {}
 
@@ -54,8 +53,10 @@ export class BoardComponent implements OnInit {
   }
 
   move(id: number) {
-    this.squares.splice(id, 1, this.player);
-    this.xIsNext = !this.xIsNext;
+    if (!this.squares[id]) {
+      this.squares.splice(id, 1, this.player);
+      this.xIsNext = !this.xIsNext;
+    }
     this.winner = this.calculateWinner();
   }
 }
