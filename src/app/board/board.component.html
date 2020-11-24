@@ -2,7 +2,7 @@
 <div class="player">{{turnPlayer}} {{player}}</div>
 <div class="board">
   <app-square *ngFor="let value of squares; let i = index" [player]="value" (click)="move(i);"
-    (winner)="isWinner(winner)">
+    (winner)="isWinner(winner)" class="square">
   </app-square>
 </div>
-<h2 class="winner" *ngIf="winner">The winner is {{winner}}</h2>
+<h2 class="winner" *ngIf="winner">{{winnerText}} {{winner}}</h2>

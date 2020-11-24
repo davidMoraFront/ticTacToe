@@ -11,8 +11,4 @@ export class MainLayoutComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
-
-  isWinner(winner: string) {
-    return winner;
-  }
 }

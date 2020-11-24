@@ -1,7 +1,9 @@
+@import "../../styles.scss";
+
 :host {
   button {
     cursor: pointer;
-    background-color: #28a745;
+    background-color: $background-start;
     padding: 0.5rem;
     color: white;
     border-radius: 0.2rem;

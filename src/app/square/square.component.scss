@@ -1,3 +1,5 @@
+@import "../../styles.scss";
+
 :host {
   display: inline-block;
   width: 5rem;
@@ -10,11 +12,11 @@
     cursor: pointer;
 
     &.player1 {
-      background-color: #007bff;
+      background-color: $background-player1;
     }
 
     &.player2 {
-      background-color: #ffc107;
+      background-color: $background-player2;
     }
   }
 }
