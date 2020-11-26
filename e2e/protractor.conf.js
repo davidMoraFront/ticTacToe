@@ -32,6 +32,5 @@ exports.config = {
         },
       })
     );
-    // await browser.waitForAngularEnabled(false);
   },
 };
