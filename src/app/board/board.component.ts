@@ -11,6 +11,7 @@ export class BoardComponent implements OnInit {
   xIsNext: boolean;
   winner: string;
   turnPlayer: string = 'Turn for the player:';
+  winnerText: string = 'The winner is:';
 
   constructor() {}
 
